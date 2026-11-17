@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snapbooth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="curtain-page">
+
+  <header class="nav">
+    <a href="index.html" class="logo">📸 snapbooth</a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="booth.html">Booth</a>
+      <a href="how.html">How it works</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="cabin">
+      <div class="cabin-sign">
+        <span class="bulbs"></span>
+        <h3>Now Open!</h3>
+        <span class="bulbs"></span>
+      </div>
+
+      <div class="panel hero-panel">
+        <p class="tag">       </p>
+        <h1>Make a little time for <span>moments to keep</span></h1>
+        <p class="sub">                           </p>
+        <a href="booth.html" class="btn big shutter">Open Booth</a>
+      </div>
+
+      <div class="slot"><span>step inside, your strip comes out here</span></div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

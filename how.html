@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How it works | Snapbooth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="curtain-page">
+
+  <header class="nav">
+    <a href="index.html" class="logo">📸 snapbooth</a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="booth.html">Booth</a>
+      <a href="how.html">How it works</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="cabin">
+      <div class="cabin-sign">
+        <span class="bulbs"></span>
+        <h3>How it works</h3>
+        <span class="bulbs"></span>
+      </div>
+
+      <div class="panel">
+        <div class="steps">
+          <div class="step"><span>1</span><p>Allow camera access</p></div>
+          <div class="step"><span>2</span><p>Pick a theme, filter, and strip color</p></div>
+          <div class="step"><span>3</span><p>Press Start and pose for 3 or 4 shots</p></div>
+          <div class="step"><span>4</span><p>Download your strip</p></div>
+        </div>
+        <a href="booth.html" class="btn big shutter">Try the Booth</a>
+      </div>
+
+      <div class="slot"><span>4 shots, 1 strip</span></div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("menuBtn").addEventListener("click", function () {
+      document.getElementById("navLinks").classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
